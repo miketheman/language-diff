@@ -83,16 +83,16 @@
   {
     'captures':
       '1':
-        'name': 'punctuation.definition.inserted.diff'
+        'name': 'punctuation.definition.changed.diff'
     'match': '^(!).*$\\n?'
     'name': 'markup.changed.diff'
   }
   {
     'captures':
       '3':
-        'name': 'punctuation.definition.inserted.diff'
+        'name': 'punctuation.definition.deleted.diff'
       '6':
-        'name': 'punctuation.definition.inserted.diff'
+        'name': 'punctuation.definition.deleted.diff'
     'match': '^(((<)( .*)?)|((-).*))$\\n?'
     'name': 'markup.deleted.diff'
   }
