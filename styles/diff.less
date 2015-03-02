@@ -1,0 +1,15 @@
+atom-text-editor::shadow {
+  .diff {
+    &.inserted {
+      color: @syntax-color-added;
+    }
+
+    &.changed {
+      color: @syntax-color-modified;
+    }
+
+    &.deleted {
+      color: @syntax-color-removed;
+    }
+  }
+}
