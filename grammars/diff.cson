@@ -22,7 +22,7 @@
       '1':
         'name': 'punctuation.definition.range.diff'
       '2':
-        'name': 'meta.toc-list.line-number.diff'
+        'name': 'meta.toc-list.coordinates.diff'
       '3':
         'name': 'punctuation.definition.range.diff'
     'match': '^(@@)\\s*(.+?)\\s*(@@)($\\n?)?'
