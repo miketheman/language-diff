@@ -12,5 +12,11 @@ atom-text-editor::shadow {
     &.deleted {
       color: @syntax-color-removed;
     }
+
+    &.only-in {
+      // we don't have any methods in diff, so we can safely use this color
+      color: @syntax-color-method;
+      font-weight: bold;
+    }
   }
 }
