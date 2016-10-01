@@ -1,3 +1,7 @@
+# v0.5.0 / 2016-10-01
+
+* [FEATURE] Highlight "Only in" lines, [@miketheman][]
+
 # v0.4.0 / 2015-11-11
 
 * [FEATURE] Adapt to syntax theme, [#4][] [@hironytic][]
@@ -24,4 +28,5 @@ Initial commit
 [#4]: https://github.com/miketheman/language-diff/issues/4
 [@hironytic]: https://github.com/hironytic
 [@mdeaudelin]: https://github.com/mdeaudelin
+[@miketheman]: https://github.com/miketheman
 [@silvenon]: https://github.com/silvenon
