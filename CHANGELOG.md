@@ -1,3 +1,8 @@
+# v0.6.0 / 2016-10-09
+
+* [FEATURE] Prevent whitespace trimming during save, [#6][] [@FlorianFranzen][]
+* [ENHANCEMENT] Add spec testing suite via Travis, [@miketheman][]
+
 # v0.5.0 / 2016-10-01
 
 * [FEATURE] Highlight "Only in" lines, [@miketheman][]
@@ -26,6 +31,8 @@ Initial commit
 [#1]: https://github.com/miketheman/language-diff/issues/1
 [#2]: https://github.com/miketheman/language-diff/issues/2
 [#4]: https://github.com/miketheman/language-diff/issues/4
+[#6]: https://github.com/miketheman/language-diff/issues/6
+[@FlorianFranzen]: https://github.com/FlorianFranzen
 [@hironytic]: https://github.com/hironytic
 [@mdeaudelin]: https://github.com/mdeaudelin
 [@miketheman]: https://github.com/miketheman
