@@ -24,7 +24,7 @@ describe 'Settings', ->
     expect(editor.getGrammar().name).toBe 'Diff'
 
   it 'sets the whitespace config to false', ->
-    expect(editor.config.get('whitespace.removeTrailingWhitespace', scope: ['.source.diff'])).toBe false
+    expect(atom.config.get('whitespace.removeTrailingWhitespace', scope: ['.source.diff'])).toBe false
 
   it 'does not trim trailing whitespace', ->
     editor.insertText "+def fib(n, sequence = [1])    \n"
