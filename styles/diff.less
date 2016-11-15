@@ -1,19 +1,19 @@
 @import "syntax-variables";
-atom-text-editor::shadow {
-  .diff {
-    &.inserted {
+atom-text-editor {
+  .syntax--diff {
+    &.syntax--inserted {
       color: @syntax-color-added;
     }
 
-    &.changed {
+    &.syntax--changed {
       color: @syntax-color-modified;
     }
 
-    &.deleted {
+    &.syntax--deleted {
       color: @syntax-color-removed;
     }
 
-    &.only-in {
+    &.syntax--only-in {
       // we don't have any methods in diff, so we can safely use this color
       color: @syntax-color-method;
       font-weight: bold;
