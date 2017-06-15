@@ -1,3 +1,7 @@
+# v.0.8.0 / Unreleased
+
+* [ENHANCEMENT] Update tests to support Atom 1.19 async methods
+
 # v.0.7.0 / 2017-01-11
 
 * [ENHANCEMENT] Remove deprecated Shadow DOM selectors, [#8][] [@Alhadis][]

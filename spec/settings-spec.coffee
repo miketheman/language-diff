@@ -28,5 +28,7 @@ describe 'Settings', ->
 
   it 'does not trim trailing whitespace', ->
     editor.insertText "+def fib(n, sequence = [1])    \n"
-    editor.save()
-    expect(editor.getText()).toBe "+def fib(n, sequence = [1])    \n"
+    waitsForPromise ->
+      # TODO: remove this Promise.resolve once atom/atom#14435 lands.
+      Promise.resolve(editor.save()).then ->
+        expect(editor.getText()).toBe "+def fib(n, sequence = [1])    \n"
