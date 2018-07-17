@@ -18,5 +18,24 @@ atom-text-editor {
       color: @syntax-color-method;
       font-weight: bold;
     }
+
+    &.syntax--range.syntax--unified,
+    &.syntax--toc-list.syntax--coordinates {
+      color: @syntax-color-import;
+    }
+
+    &.syntax--header {
+      color: @syntax-color-method;
+    }
+
+    .syntax--mail {
+      color: @syntax-gutter-text-color;
+    }
+
+    &.syntax--punctuation.syntax--definition {
+      &.syntax--separator {
+        color: @syntax-gutter-text-color;
+      }
+    }
   }
 }

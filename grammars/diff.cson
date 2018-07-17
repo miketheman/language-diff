@@ -98,7 +98,7 @@
   }
   {
     'match': '^index [0-9a-f]{7,40}\\.\\.[0-9a-f]{7,40}.*$\\n?'
-    'name': 'meta.diff.index.git'
+    'name': 'meta.diff.header.index.git'
   }
   {
     'captures':
@@ -112,6 +112,55 @@
   {
     'match': '^Only in .*: .*$\\n?'
     'name': 'meta.diff.only-in'
+  }
+  {
+    'captures':
+      '2':
+        'name': 'punctuation.definition.inserted.diff'
+      '4':
+        'name': 'punctuation.definition.deleted.diff'
+    'match': '^\\s(.*)\\s*\\|\\s*\\d*\\s((\\+)*)((\\-)*)$\\n?'
+    'name': 'meta.header.git.file'
+  }
+  {
+    'match': '^new file mode \\d*$\\n?'
+    'name': 'meta.diff.header.newfilemode'
+  }
+  {
+    'match': '^deleted file mode \\d*$\\n?'
+    'name': 'meta.diff.header.deletedfilemode'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'meta.mail.commit'
+    'match': '^From\\s([0-9a-f]*)\\s\\w{3}\\s\\w{3}\\s\\d*\\s\\d{2}:\\d{2}:\\d{2}\\s\\d{4}$\\n?'
+    'name': 'meta.mail.commitline'
+  }
+  {
+    'captures':
+      '2':
+        'name': 'meta.mail.address'
+      '3':
+        'name': 'meta.mail.name'
+      '4':
+        'name': 'meta.mail.email'
+    'match': '^(.*):\\s((.*)(<(.*)@(.*)\\.(.*)>))$\\n?'
+    'name': 'meta.mail.addressline'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'meta.mail.date'
+    'match': '^Date:\\s(\\w{3}*,\\s\\d*\\s\\w{3}\\s\\d{4}\\s\\d{2}:\\d{2}:\\d{2}\\s\\-\\d{4})$\\n?'
+    'name': 'meta.mail.dateline'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'meta.mail.subject'
+    'match': '^Subject:\\s(.*)$\\n?'
+    'name': 'meta.mail.subjectline'
   }
 ]
 'scopeName': 'source.diff'
