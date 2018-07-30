@@ -133,33 +133,41 @@
   {
     'captures':
       '1':
+        'name': 'meta.mail.label'
+      '2':
         'name': 'meta.mail.commit'
-    'match': '^From\\s([0-9a-f]*)\\s\\w{3}\\s\\w{3}\\s\\d*\\s\\d{2}:\\d{2}:\\d{2}\\s\\d{4}$\\n?'
+    'match': '^(From)\\s([0-9a-f]*)\\s\\w{3}\\s\\w{3}\\s\\d*\\s\\d{2}:\\d{2}:\\d{2}\\s\\d{4}$\\n?'
     'name': 'meta.mail.commitline'
   }
   {
     'captures':
+      '1':
+        'name': 'meta.mail.label'
       '2':
         'name': 'meta.mail.address'
       '3':
         'name': 'meta.mail.name'
       '4':
         'name': 'meta.mail.email'
-    'match': '^(.*):\\s((.*)(<(.*)@(.*)\\.(.*)>))$\\n?'
+    'match': '^(.*:)\\s((.*)(<(.*)@(.*)\\.(.*)>))$\\n?'
     'name': 'meta.mail.addressline'
   }
   {
     'captures':
       '1':
+        'name': 'meta.mail.label'
+      '2':
         'name': 'meta.mail.date'
-    'match': '^Date:\\s(\\w{3}*,\\s\\d*\\s\\w{3}\\s\\d{4}\\s\\d{2}:\\d{2}:\\d{2}\\s\\-\\d{4})$\\n?'
+    'match': '^(Date:)\\s(\\w{3}*,\\s\\d*\\s\\w{3}\\s\\d{4}\\s\\d{2}:\\d{2}:\\d{2}\\s\\-\\d{4})$\\n?'
     'name': 'meta.mail.dateline'
   }
   {
     'captures':
       '1':
+        'name': 'meta.mail.label'
+      '2':
         'name': 'meta.mail.subject'
-    'match': '^Subject:\\s(.*)$\\n?'
+    'match': '^(Subject:)\\s(.*)$\\n?'
     'name': 'meta.mail.subjectline'
   }
 ]
