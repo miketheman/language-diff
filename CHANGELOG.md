@@ -1,6 +1,7 @@
 # v.0.8.0 / Unreleased
 
 * [ENHANCEMENT] Update tests to support Atom 1.19 async methods
+* [ENHANCEMENT] Update CI suite from atom/ci
 
 # v.0.7.0 / 2017-01-11
 
